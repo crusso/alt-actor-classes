@@ -1,21 +1,12 @@
 {
-  "canisters": {
-    "classes": {
-      "main": "src/classes/main.mo",
-      "type": "motoko"
+   "canisters": {
+   "Map": {
+      "type": "motoko",
+      "main": "src/map/Map.mo"
     },
-    "classes_assets": {
-      "dependencies": [
-        "classes"
-      ],
-      "frontend": {
-        "entrypoint": "src/classes_assets/src/index.html"
-      },
-      "source": [
-        "src/classes_assets/assets",
-        "dist/classes_assets/"
-      ],
-      "type": "assets"
+    "Test": {
+      "type": "motoko",
+      "main": "src/test/Test.mo"
     }
   },
   "defaults": {
