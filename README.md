@@ -1,3 +1,13 @@
+
+This is a simple variation on the actor class example of Motoko that, instead of directly importing the actor class for Buckets, uses an intermediate factor actor to import and instantiate buckets.
+
+For examples involving several, independent. actor classes, this approach can scale beyond the wasm size confines of a single actor directly importing all of its classes by distributing the code of imported classes amongst intervening factory actors.
+
+Your mileage may vary.
+
+The original example is in master branch. The required changes are in PR #1.
+
+
 # classes
 
 Welcome to your new classes project and to the internet computer development community. By default, creating a new project adds this README and some template files to your project directory. You can edit these template files to customize your project and to include your own code to speed up the development cycle.
