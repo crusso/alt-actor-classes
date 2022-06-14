@@ -3,16 +3,17 @@ import Map "canister:Map";
 
 actor Test {
 
-  public func run() : async () {
+  public func run() : async Text {
+    var log = "";
     var i = 0;
     while (i < 24) {
       let t = debug_show(i);
-      assert (null == (await Map.get(i)));
-      Debug.print("putting: " # debug_show(i, t));
+      log #= "putting: " # debug_show(i, t) # "\n";
       await Map.put(i, t);
       assert (?t == (await Map.get(i)));
       i += 1;
     };
+    log
   };
 
 };
