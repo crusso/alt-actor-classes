@@ -2,7 +2,7 @@
    "canisters": {
    "BucketFactory": {
       "type": "motoko",
-      "main": "src/map/BucketFactory.mo"
+      "main": "src/buckets/BucketFactory.mo"
     },
    "Map": {
       "type": "motoko",
