@@ -1,7 +1,7 @@
 
 This is a simple variation on the actor class example of Motoko that, instead of directly importing the actor class for Buckets, uses an intermediate factor actor to import and instantiate buckets.
 
-For examples involving several, independent. actor classes, this approach can scale beyond the wasm size confines of a single actor directly importing all of its classes by distributing the code of imported classes amongst intervening factory actors.
+For examples involving several, independent actor classes, this approach can scale beyond the wasm size confines (3MB?) of a single actor that directly imports all of its classes by, instead, distributing the code of imported classes amongst intervening factory actors.
 
 Your mileage may vary.
 
